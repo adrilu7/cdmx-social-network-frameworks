@@ -1,0 +1,26 @@
+
+.Btn {
+    background-color: #96064e;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.BtnGoogle1 {
+    background-color: #680134;
+    color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 0;
+    border: none;
+    padding: 10px 20px;
+    float:none;
+}
+
+.BtnFacebook1 {
+    background-color: #680134;
+    color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 0;
+    border: none;
+    padding: 10px 20px;
+    float:none;
+}
