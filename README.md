@@ -2,7 +2,7 @@
 
 ---
 
-![Cluster](src/Components/images/icon2.png)
+![Cluster](src/Components/Images/icon2.png)
 
 ## Introducción   :busts_in_silhouette:
 
@@ -92,7 +92,7 @@ Así la usuaria no solo podrá compartir contenido con sus amigas y colegas, sin
 
 ### Preguntas de la encuesta:
 
-![Preguntas](src/Components/images/encuesta1.png)
+![Preguntas](src/Components/Images/encuesta1.png)
 
 1. ¿Qué edad tienes?
 
@@ -128,10 +128,10 @@ Metiéndonos en la parte de los Paint points referente a las redes sociales pref
 
 Por último la encuesta arrojó que aunque la mayoría (60%) no trabaja en CTIM; hay un interés genuino por estos tema, siendo que el 80% de las encuestadas contestó positivo al preguntarles sobre si les interesan los temas relacionados a las CTIM.
 La segunda encuesta fue sobre la paleta de colores. En dicha encuesta se le pidió votar 4 paletas de colores:
-![encuestaColores](src/Components/images/encuestaC.jpg)
-![encuestaColores](src/Components/images/encuestaC1.jpg)
-![encuestaColores](src/Components/images/encuestaC2.jpg)
-![encuestaColores](src/Components/images/encuestaC3.jpg)
+![encuestaColores](src/Components/Images/encuestaC.jpg)
+![encuestaColores](src/Components/Images/encuestaC1.jpg)
+![encuestaColores](src/Components/Images/encuestaC2.jpg)
+![encuestaColores](src/Components/Images/encuestaC3.jpg)
 Aunque las personas encuestadas solo fueron 30, el 50% votó por la primera paleta de colores y dado que nuestro diseño está enfocado a priorizar a nuestras usuarias se optó por elegir esta paleta, además que el equipo cree firmemente en que estos colores gracias a su dinamismo representan perfectamente el espíritu de **Cluster**.
 
 ## Benchmark  :clipboard:
@@ -140,26 +140,26 @@ Para poder diseñar una red social que satisfaga a las usuarias al màximo
 
 se analizaron productos similares y se compararon en base a sus procesos y funcionalidades.
 
-![benchmark](src/Components/images/benchmark.png)
+![benchmark](src/Components/Images/benchmark.png)
 
 **Resultados:
 
 ## Mockups  :pencil2:
 
-![mockup 1](src/Components/images/mockup1.png)
+![mockup 1](src/Components/Images/mockup1.png)
 
-![mockup 2](src/Components/images/mockup2.jpeg)
+![mockup 2](src/Components/Images/mockup2.jpeg)
 
 ## Maquetado   :notebook_with_decorative_cover:
 
 Para nuestro proceso de maquetado decidimos usar la plataforma digital "Canva". Esta maqueta es el reflejo de los datos obtenidos en las encuestas, por ejemplo, la paleta de colores y el hacer un diseño sencillo e intuitivo donde fueran pocos botones, pero con funcionalidad clara.
-![maquetado 1](src/Components/images/1.png)
+![maquetado 1](src/Components/Images/1.png)
 
-![maquetado 2](src/Components/images/2.png)
+![maquetado 2](src/Components/Images/2.png)
 
-![maquetado 3](src/Components/images/3.png)
+![maquetado 3](src/Components/Images/3.png)
 
-![maquetado 4](src/Components/images/4.png)
+![maquetado 4](src/Components/Images/4.png)
 
 ## Prototipo de alta fidelidad   :green_book:
 
