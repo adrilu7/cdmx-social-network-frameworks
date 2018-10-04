@@ -2,7 +2,7 @@
 
 ---
 
-![Cluster](src/Components/Images/icon2.png)
+![Cluster](src/Components/Images/icon1.png)
 
 ## Introducción   :busts_in_silhouette:
 
