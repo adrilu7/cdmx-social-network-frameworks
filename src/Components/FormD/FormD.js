@@ -1,46 +1,61 @@
 import React, { Component } from 'react';
 import firebase from '../../firebase/firebase';
+import { Redirect } from 'react-router-dom';
 
 import './FormD.css';
 
 class FormD extends Component {
  constructor (props){
-//console.log(props)
  super(props)
+ this.newUser = this.newUser.bind(this);
+ this.handleOnChange = this.handleOnChange.bind(this);
  this.state = {
-    email: '',
-    password: ''
+    email2: '',
+    password2: ''
 }
-    this.newUser = this.newUser.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+}
+    
+componentWillMount(){
+  firebase.auth().onAuthStateChanged(user => {
+    this.setState({user});
+  })
 }
 
 newUser(e){
- firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+ e.preventDefault();
+ firebase.auth().createUserWithEmailAndPassword(this.state.email2, this.state.password2)
  .then(() => {
-    console.log('nuevo');
+    //if(user) {
+    // window.location.assign('/Home')
+    //} 
  }).catch((error)=>{
-      alert('Este correo electronico ya esta registrado');
-     })
+  const errorCode = error.code;
+  const errorMessage = error.message;
+  console.log(errorCode);
+  alert('Este correo electronico ya esta registrado');
+  console.log(errorMessage);
+  });
+  
 }
 
-  handleChange(e){ 
+  handleOnChange(e){ 
     this.setState({[e.target.name]: e.target.value});
      }
             
-    
  render() {
   if (this.state.user){ 
     return ( 
-      <Redirect to = '/home'/>
+      <Redirect to = '/Home'/>
     )
-  }else{
-  return (
-    <div className="FormD-Container">
-      <h3  className="FormD-title">Regístrate</h3>
-      <input type="email" name="email" placeholder="Ingresa tu email" onChange={this.handleChange} value={this.state.email}  className="FormD-input" />
-      <input type="password" name="password" placeholder="Ingresa tu contraseña" onChange={this.handleChange} value={this.state.password}  className="FormD-input" />
-      <button className="BtnD-enviar" onClick={this.newUser} >Enviar</button>
+  }else { 
+    return( 
+    <div className="FormD-Container2">
+      <h3  className="FormD-title2">Regístrate</h3>
+      <form>
+      <input type="email" name="email2" placeholder="Ingresa un email" onChange={this.handleOnChange} value={this.state.email}  className="FormD-input2" />
+      <input type="password" name="password2" placeholder="Ingresa una contraseña" onChange={this.handleOnChange} value={this.state.password}  className="FormD-input2" />
+      <button type="submit" className="BtnD-enviar" onClick={this.newUser} >Enviar</button>
+      </form>
       </div>
     );
   }
