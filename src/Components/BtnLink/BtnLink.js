@@ -11,8 +11,8 @@ class BtnLink extends Component {
       user: null 
     };
     
-    //this.handleAuthGoogle= this.handleAuth.bind(this);
-    //this.handleAuthFacebook= this.handleAuthFacebook.bind(this);
+    // this.handleAuthGoogle= this.handleAuth.bind(this);
+    // this.handleAuthFacebook= this.handleAuthFacebook.bind(this);
   }
   
   componentWillMount(){ 
