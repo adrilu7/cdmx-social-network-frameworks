@@ -7,3 +7,14 @@
     padding: 10px 20px;
     float:none;
 }
+
+.Form-Container2 {
+    background-color: #96064e;
+    color: antiquewhite;
+    text-align: center;
+    background-position: center;
+    text-align: center;
+    width: 60%;
+    margin-left: 23%;
+    margin-top: 8%;
+  }

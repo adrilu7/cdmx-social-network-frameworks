@@ -1,62 +1,61 @@
 import React, { Component } from 'react';
+import firebase from '../../firebase/firebase';
+import { Redirect } from 'react-router-dom';
 
 import './Form.css';
-
-class Form extends Component {
-    render() {
-
-
-  return (
-    <div className="Form-Container">
-      <form className="Form-Form">
-      <h3  className="Form-title">Iniciar sesión</h3>
-      <input type="email" className="Form-input" placeholder="Ingresa tu email"/>
-      <input type="password" className="Form-input" placeholder="Ingresa tu contraseña"/>
-      <button className="Btn-enviar" >Enviar</button>
-      </form>
-      </div>
-    )
-  }
-}
 
 class Form extends Component {
   constructor (props){
  //console.log(props)
   super(props)
+  this.singIn = this.singIn.bind(this);
+  this.handleChange = this.handleChange.bind(this);
   this.state = {
      email: '',
      password: ''
- }
-     this.admin = this.admin.bind(this);
-     this.handleChangeD = this.handleChangeD.bind(this);
+    } 
  }
  
- admin(e){
+ componentWillMount(){
+  firebase.auth().onAuthStateChanged(user => {
+    this.setState({user});
+  })
+}
+
+ singIn(e){
+  e.preventDefault();
   firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
   .then(() => {
-     console.log('nuevo');
   }).catch((error)=>{
-       alert('Este correo electronico ya esta registrado');
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert('E-mail incorrecto');
+      alert('Contraseña incorrecto');
       })
  }
  
-   handleChangeD(e){ 
+   handleChange(e){ 
      this.setState({[e.target.name]: e.target.value});
       }
              
      
   render() {
+    if (this.state.user){ 
+      return ( 
+        <Redirect to = '/Home'/>
+      )
+    }else { 
    return (
-     <div className="FormD-Container">
-       <h3  className="FormD-title">Regístrate</h3>
-       <input type="email" name="email" placeholder="Ingresa tu email" onChange={this.handleChangeD} value={this.state.email}  className="FormD-input" />
-       <input type="password" name="password" placeholder="Ingresa tu contraseña" onChange={this.handleChangeD} value={this.state.password}  className="FormD-input" />
-       <button className="BtnD-enviar" onClick={this.admin} >Enviar</button>
+     <div className="Form-Container">
+       <h3  className="Form-title">Iniciar sesión</h3>
+       <input type="email" name="email" placeholder="Ingresa tu email" onChange={this.handleChange} value={this.state.email}  className="Form-input" />
+       <input type="password" name="password" placeholder="Ingresa tu contraseña" onChange={this.handleChange} value={this.state.password}  className="Form-input" />
+       <button className="BtnD-enviar" onClick={this.singIn} >Enviar</button>
        </div>
      )
    }
  }
- 
-
-
+}
 export default Form;
+
+

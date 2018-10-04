@@ -11,11 +11,9 @@ class Registrar extends Component {
     return (
      
       <div className="Form-Container">
-      <form className="Form-Form">
       <Header/>
       <FormD/>
       <Link to = '/'>Regresar</Link>
-      </form>
       </div>
     
     );

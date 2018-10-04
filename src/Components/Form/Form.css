@@ -5,6 +5,10 @@
   color: antiquewhite;
   text-align: center;
   background-position: center;
+  text-align: center;
+  width: 60%;
+  margin-left: 23%;
+  margin-top: 8%;
 }
 
 .Btn-enviar{
@@ -21,6 +25,11 @@
 
 
 input {
+  margin-bottom: 18%;
+}
+
+Form-input{
+
   margin-bottom: 18%;
 }
 

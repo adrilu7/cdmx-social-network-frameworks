@@ -38,7 +38,7 @@ class BtnLink extends Component {
   render () {
     if (this.state.user){ 
       return ( 
-        <Redirect to = '/home'/>
+        <Redirect to = '/Home'/>
       )
     }else { 
       return( 

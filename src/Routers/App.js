@@ -9,16 +9,16 @@ import Error from '../Components/Error/Error';
 
 import './App.css';
 const App = () =>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Switch>
-            <Route path={`${process.env.PUBLIC_URL}/`} component={Login} exact />
-            <Route path={`${process.env.PUBLIC_URL}/Home`} component={Home} exact/>
-            <Route path={`${process.env.PUBLIC_URL}/Registrar`} component={Registrar} exact />
+            <Route path='/' component={Login} exact />
+            <Route path='/Registrar' component={Registrar} exact />
+            <Route path='/Home' component={Home} exact/>
             <Route component={Error} />
           </Switch>
         </div>
       </BrowserRouter>
   
 export default App; 
-  
+//{`${process.env.PUBLIC_URL}

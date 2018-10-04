@@ -12,9 +12,9 @@ class FormD extends Component {
  this.state = {
     email2: '',
     password2: ''
+  }  
 }
-}
-    
+
 componentWillMount(){
   firebase.auth().onAuthStateChanged(user => {
     this.setState({user});
@@ -25,9 +25,6 @@ newUser(e){
  e.preventDefault();
  firebase.auth().createUserWithEmailAndPassword(this.state.email2, this.state.password2)
  .then(() => {
-    //if(user) {
-    // window.location.assign('/Home')
-    //} 
  }).catch((error)=>{
   const errorCode = error.code;
   const errorMessage = error.message;
@@ -36,13 +33,13 @@ newUser(e){
   console.log(errorMessage);
   });
   
-}
+ }
 
   handleOnChange(e){ 
     this.setState({[e.target.name]: e.target.value});
      }
-            
- render() {
+    
+ render() { 
   if (this.state.user){ 
     return ( 
       <Redirect to = '/Home'/>
