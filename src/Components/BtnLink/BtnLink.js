@@ -5,8 +5,8 @@ import firebase from '../../firebase/firebase';
 import './BtnLink.css';
 
 class BtnLink extends Component {
-  constructor () { 
-    super (); 
+  constructor (props) { 
+    super (props); 
     this.state = { 
       user: null 
     };
@@ -51,5 +51,7 @@ class BtnLink extends Component {
       );
     }
   } 
+
 }
+
 export default BtnLink; 

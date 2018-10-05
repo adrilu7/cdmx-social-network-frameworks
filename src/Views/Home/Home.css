@@ -3,4 +3,15 @@
     background-color: #96064e;
     color: antiquewhite;
   }
-  
+  .Hm{
+    margin-top: 5%;
+    text-align: center;
+    width: 15%;
+    height: 50px;
+    border-radius: 150px;
+    border: solid 4px white;
+
+  }
+  .Home-cont{
+    text-align: center;
+  }

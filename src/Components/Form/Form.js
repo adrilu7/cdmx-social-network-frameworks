@@ -39,7 +39,7 @@ class Form extends Component {
       }
              
      
-  render() {
+  render () {
     if (this.state.user){ 
       return ( 
         <Redirect to = '/Home'/>
@@ -55,7 +55,9 @@ class Form extends Component {
      )
    }
  }
+
 }
+
 export default Form;
 
 

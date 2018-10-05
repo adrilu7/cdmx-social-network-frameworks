@@ -1,0 +1,32 @@
+
+.container{
+
+        padding: 5px;
+        border-radius: 7px;
+        background-color: #680134;
+      color: #faebd7;
+        margin-left: 6%;
+        margin-top: 10%;
+
+}
+
+.BtnD-enviarPost{
+
+    background-color: #680134;
+    color: #faebd7;
+    border-radius: 7px;
+    box-shadow: 0;
+    border: none;
+    padding: 10px 20px;
+    float: right;
+
+}
+
+.tex{
+    background-color: #faebd7;
+    color:#680134;
+}
+.Dos{
+
+    
+}

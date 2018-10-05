@@ -39,7 +39,7 @@ newUser(e){
     this.setState({[e.target.name]: e.target.value});
      }
     
- render() { 
+ render () { 
   if (this.state.user){ 
     return ( 
       <Redirect to = '/Home'/>
@@ -57,5 +57,8 @@ newUser(e){
     );
   }
  }
+ 
 }
+
+
 export default FormD;

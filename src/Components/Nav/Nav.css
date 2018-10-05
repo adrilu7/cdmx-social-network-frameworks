@@ -1,0 +1,76 @@
+.Menu{
+        background-color: #680134;
+        color: #faebd7;
+        width: 16%;
+    
+}
+
+.logoUy{
+
+    background-color: #faebd7;
+    color: #680134;
+    border-radius: 8px;
+    box-shadow: 0;
+    border: none;
+    padding: 10px 20px;
+    
+}
+.logoUt{
+
+
+background-color: #faebd7;
+    color: #680134;
+    border-radius: 8px;
+    box-shadow: 0;
+    border: none;
+    padding: 10px 20px;
+    float:none;
+}
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+
+.nav3{
+
+        border-radius: 200px;
+        width: 16%;
+    
+}
+.img{
+    border-radius: 4em;
+    width: 7em;
+}
+
+
+.bm-burger-bars {
+  background:  #680134;
+}
+
+.bm-cross-button {
+  height: 35px;
+  width: 35px;
+}
+
+
+.bm-cross {
+  background:#680134;
+}
+
+
+.bm-menu {
+  background:  #faebd7;
+  color: #680134;
+  padding: 2em 1.5em 1.5em;
+  font-size: 1.15em;
+
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
